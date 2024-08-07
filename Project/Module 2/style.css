@@ -1,0 +1,86 @@
+.sidebar {
+    width: 250px;
+    background-color: #343a40;
+    color: white;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    transition: transform 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 80px;
+        transform: translateX(-100%);
+        position: fixed;
+        z-index: 1000;
+    }
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex: 1;
+}
+
+.content {
+    flex: 1;
+    padding: 15px;
+}
+
+.priority-p1 {
+    background-color: #f8d7da;
+}
+
+.priority-p1:hover {
+    background-color: #f5c2c7 !important;
+}
+
+.priority-p2,
+.priority-p3 {
+    background-color: #fff3cd;
+}
+
+.priority-p2:hover,
+.priority-p3:hover {
+    background-color: #ffeeba !important;
+}
+
+.priority-p4 {
+    background-color: #d4edda;
+}
+
+.priority-p4:hover {
+    background-color: #c3e6cb !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.btn_filter {
+    padding: 5px 20px;
+    margin: 3px;
+    margin-top: 10px;
+    border: 2px solid;
+}
+
+.footer {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    padding-top: 15px;
+}
+
+#task-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+}
