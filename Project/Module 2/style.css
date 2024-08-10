@@ -1,0 +1,108 @@
+.flex-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+#sidebar {
+    background-color: #343a40;
+    padding: 15px;
+    width: auto; 
+    flex-shrink: 0; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: stretch;
+}
+
+#sidebar .nav-link {
+    color: #fff;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto; 
+}
+
+.nav-text{
+    padding-left: 10px;
+}
+
+#main-content {
+    padding: 20px;
+    background-color: #f8f9fa;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch; 
+}
+
+.priority-p1 {
+    background-color: #f8d7da;
+}
+
+.priority-p1:hover {
+    background-color: #f5c2c7 !important;
+}
+
+.priority-p2,
+.priority-p3 {
+    background-color: #fff3cd;
+}
+
+.priority-p2:hover,
+.priority-p3:hover {
+    background-color: #ffeeba !important;
+}
+
+.priority-p4 {
+    background-color: #d4edda;
+}
+
+.priority-p4:hover {
+    background-color: #c3e6cb !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.btn_filter {
+    padding: 5px 20px;
+    margin: 3px;
+    margin-top: 10px;
+    border: 2px solid;
+}
+
+
+#task-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#date-time {
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.card-body {
+    background-color: #ffffff; 
+    padding: 20px; 
+}
+
+#current-date-time {
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    color: #333; 
+    margin: 0;
+}
+
+
+@media (max-width: 767.98px) {
+    .nav-link i {
+        display: inline-block;
+    }
+    .nav-text {
+        display: none;
+    }
+}
